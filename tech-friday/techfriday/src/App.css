@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Mistral';
+  src: url('./assets/fonts/mistral.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik:wght@400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: #2A2A2A url("./assets/bg.png");
+  background-repeat: repeat;
+  font-family: 'Rubik', sans-serif;
+}
+#root{
+  display: grid;
+  grid-template-columns: 1fr 1200px 1fr;
+  grid-auto-columns: 0;
+}
+.App{
+  grid-column: 2;
+}
+
+@media(max-width: 800px){
+  #root{
+    grid-template-columns: 100vw;
+  }
+  .App{
+    grid-column: 1;
+  }
+}
