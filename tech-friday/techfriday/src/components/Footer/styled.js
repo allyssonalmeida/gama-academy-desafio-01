@@ -5,35 +5,36 @@ export const FooterComponent = styled.footer`
   justify-content: space-between;
   padding: 10px 0;
   background: #2A2A2A;
-
-  & nav{
+  & a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    &:hover{
+      color: #38C973;
+    }
+  }
+  & div{
     display: flex;
-    flex-direction: row;
-
-    & ul{
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      & li{
-        display: block;
-        margin: 0 10px;
-
-        & a img{
-          width: 30px;
-        }
-      }
+    align-items: center;
+    color: #fff;
     } 
   }
 
   @media(max-width: 800px){
     width: 100%;
-    padding: 10px;
-    & nav{
-      & ul{
-      }
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    & img{
+      margin: 0 auto;
     }
+    & div{
+      flex-direction: column;
+      text-align: center;
+      font-size: .8rem;
+      padding: 5px 10px;
+    }
+
   } 
 `;
 export const Logo = styled.img`
