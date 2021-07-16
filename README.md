@@ -5,6 +5,7 @@
 ### 1° Entrega 
 
 - Site Oficial / Landing page  
+- Resultado Final https://tech-store-6xyf3jg5m-allyssonalmeida.vercel.app/
 
 ### Entregáveis: 
 
